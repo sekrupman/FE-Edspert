@@ -95,7 +95,7 @@ function displayList(items, wrapper, rows, columns, page) {
   buttons.forEach((button) => {
     button.addEventListener("click", (event) => {
       const courseId = event.target.getAttribute("data-id");
-      window.location.href = `product.html?id=${courseId}`;
+      window.location.href = `product?id=${courseId}`;
     });
   });
 }
