@@ -164,4 +164,4 @@ paginationElement.addEventListener("click", function (event) {
 
 initializeCourses();
 
-module.exports = {displayList, displayPagination, filterCourses, filter}
+// module.exports = {displayList, displayPagination, filterCourses, filter}

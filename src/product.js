@@ -147,4 +147,4 @@ const materi = (courses, courseId) => {
 detailCourse();
 
 
-module.exports={detailCourse, mentorList, materi, bannerTitle, webTitleTab}
+// module.exports={detailCourse, mentorList, materi, bannerTitle, webTitleTab}
