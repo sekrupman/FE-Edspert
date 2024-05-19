@@ -5,7 +5,7 @@ module.exports = {
   mode: 'production',
   entry: {
     katalog: './src/katalog.js',
-    // product: './src/product.js'
+    product: './src/product.js'
   },
   output: {
     filename: '[name].bundle.js',
@@ -32,11 +32,11 @@ module.exports = {
       template: path.resolve(__dirname, './src/katalog.html'),
       chunks: ['katalog']
     }),
-    // new HtmlWebpackPlugin({
-    //   filename: 'product.html',
-    //   template: path.resolve(__dirname, './src/product.html'),
-    //   chunks: ['product']
-    // })
+    new HtmlWebpackPlugin({
+      filename: 'product.html',
+      template: path.resolve(__dirname, './src/product.html'),
+      chunks: ['product']
+    })
   ],
   devServer: {
     static: {
