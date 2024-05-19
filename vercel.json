@@ -5,7 +5,7 @@
             "dest": "./src/product.html"
         },
         {
-            "src": "/(.*)",
+            "src": "/",
             "dest": "./src/katalog.html"
         }
     ]

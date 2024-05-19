@@ -2,13 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
   entry: {
-    index: './src/katalog.js'
+    katalog: './src/katalog.js',
+    product: './src/product.js'
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'dist'),
     clean: true
   },
   module: {
@@ -27,14 +27,17 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: path.resolve(__dirname, './src/katalog.html'),
-      chunks: ['index']
+      filename: 'katalog.html',
+      template: './src/katalog.html',
+      chunks: ['katalog']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'product.html',
+      template: './src/product.html',
+      chunks: ['product']
     })
   ],
   devServer: {
-    static: {
-      directory: path.resolve(__dirname, 'public'),
-    },
+    contentBase: './dist'
   }
 };
