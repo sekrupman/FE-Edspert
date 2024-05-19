@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'public'), 
+    path: path.resolve(__dirname, 'public'),
     clean: true
   },
   module: {
@@ -28,14 +28,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'katalog.html', 
+      filename: 'katalog.html',
       template: path.resolve(__dirname, './src/katalog.html'),
       chunks: ['katalog']
     }),
     new HtmlWebpackPlugin({
       filename: 'product.html',
       template: path.resolve(__dirname, './src/product.html'),
-      chunks: ['product'] 
+      chunks: ['product']
     })
   ],
   devServer: {
