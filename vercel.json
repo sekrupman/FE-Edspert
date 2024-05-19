@@ -2,11 +2,11 @@
     "routes": [
         {
             "src": "/product(.*)",
-            "dest": "/product.html"
+            "dest": "./src/product.html"
         },
         {
             "src": "/(.*)",
-            "dest": "/katalog.html"
+            "dest": "./src/katalog.html"
         }
     ]
 }
