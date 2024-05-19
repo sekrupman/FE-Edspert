@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'production',
   entry: {
-    index: './src/katalog.js' // Change entry point to katalog.js
+    index: './src/katalog.js'
   },
   output: {
     filename: '[name].bundle.js',
@@ -27,9 +27,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'index.html', // Change filename to index.html
+      filename: 'index.html',
       template: path.resolve(__dirname, './src/katalog.html'),
-      chunks: ['index'] // Change chunks to index
+      chunks: ['index']
     })
   ],
   devServer: {

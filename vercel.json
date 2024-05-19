@@ -1,3 +1,13 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/public" }]
+    "rewrites": [{ "source": "/(.*)", "destination": "/public" }],
+    "routes": [
+        {
+          "src": "/(.*)",
+          "dest": "/katalog.html"
+        },
+        {
+          "src": "/product(.*)",
+          "dest": "/product.html"
+        }
+      ]
 }
