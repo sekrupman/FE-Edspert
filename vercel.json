@@ -1,6 +1,3 @@
 {
-    "rewrites": [
-        {"source":"/(.*)", "destination":"/public"}
-    ]
-        
+    "rewrites": [{ "source": "/(.*)", "destination": "./src/katalog.html" }]
 }
