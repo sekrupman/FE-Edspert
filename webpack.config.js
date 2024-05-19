@@ -4,8 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'production',
   entry: {
-    katalog: './src/katalog.js',
-    product: './src/product.js'
+    index: './src/katalog.js' // Change entry point to katalog.js
   },
   output: {
     filename: '[name].bundle.js',
@@ -28,14 +27,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'katalog.html',
+      filename: 'index.html', // Change filename to index.html
       template: path.resolve(__dirname, './src/katalog.html'),
-      chunks: ['katalog']
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'product.html',
-      template: path.resolve(__dirname, './src/product.html'),
-      chunks: ['product']
+      chunks: ['index'] // Change chunks to index
     })
   ],
   devServer: {
