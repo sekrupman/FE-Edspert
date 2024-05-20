@@ -1,12 +1,7 @@
 {
-    "routes": [
-        {
-            "src": "/product(.*)",
-            "dest": "./src/product.html"
-        },
-        {
-            "src": "/",
-            "dest": "./src/katalog.html"
-        }
+    "rewrites": [
+      { "source": "/product", "destination": "/product.html" },
+      { "source": "/katalog", "destination": "/katalog.html" }
     ]
-}
+  }
+  
